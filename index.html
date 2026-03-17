@@ -1,14 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>GodsEye Client Test Page</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GodsEye: The Shift from SEO to AEO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #080808;
+            --text-color: #e0e0e0;
+            --accent-color: #5bb2fa;
+            --box-bg: #141416;
+            --border-color: #2a2a2a;
+        }
 
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fancy Font for Headings */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            background: -webkit-linear-gradient(45deg, #ffffff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .subheadline {
+            font-size: 1.25rem;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+        }
+
+        .stat-box {
+            background-color: var(--box-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .stat-box strong {
+            color: #ffffff;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background-color: var(--box-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        th, td {
+            padding: 18px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #1c1c20;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Step-by-Step Layout */
+        .process-grid {
+            margin-top: 30px;
+        }
+
+        .step-card {
+            background-color: var(--box-bg);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .step-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(145deg, #111114 0%, #050505 100%);
+            border: 1px solid var(--border-color);
+            padding: 50px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            border: none;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 50px 0;
+        }
+        
+        .image-placeholder-text {
+            display: block;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px dashed #444;
+            background: #0a0a0a;
+        }
+    </style>
+</head>
 <body>
-    <h1>Welcome to the Client's Page</h1>
-    <p>If the script works, a log should have just been sent to your server.</p>
 
     <script>
         (function() {
@@ -32,6 +209,138 @@
             }).catch(err => console.error("GodsEye: Failed", err));
         })();
     </script>
-</body>
 
+<div class="container">
+    
+    <header class="hero-section">
+        <h1>Your customers are asking AI who to trust.<br>Is your brand the answer?</h1>
+        <p class="subheadline">Most companies have invested years in SEO. But SEO gets you ranked on Google. <strong>AEO gets you recommended by AI.</strong> These are two completely different games — and most companies are only playing one.</p>
+    </header>
+
+    <div class="stat-box">
+        <p><strong>80% of users never click a single link</strong> when AI gives them a direct answer. If you're not named in that answer, you don't exist to that buyer.</p>
+    </div>
+
+    <section>
+        <h2>The way people search has changed. Your visibility strategy hasn't.</h2>
+        <p>Two or three years ago, people searched Google, saw 10 links, and clicked. Today, they open ChatGPT, Perplexity, or Google AI Mode and ask a question. They get one answer. They trust it. They act on it.</p>
+        
+        <p>Here's what that means for your business:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>SEO (Google)</th>
+                    <th>AEO (AI Search)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Goal</strong></td>
+                    <td>Ranked in a list</td>
+                    <td>Recommended as the answer</td>
+                </tr>
+                <tr>
+                    <td><strong>User Action</strong></td>
+                    <td>Click a link</td>
+                    <td>Read and decide</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Metric</strong></td>
+                    <td>Traffic Volume</td>
+                    <td>Trust & Answer Share</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+        <p><strong>Your Google ranking doesn't matter if AI doesn't mention you.</strong></p>
+        <p>A parent looking for the best JEE coaching, a founder researching a SaaS tool, a buyer comparing products — they're not clicking links anymore. They're reading the AI's answer and deciding. If your competitor appears in that answer and you don't, you've lost the sale before you even knew the conversation was happening.</p>
+
+        <h3>The Hidden Problem Most Companies Miss</h3>
+        <p>Your website might actually be cited by AI — but the wrong parts are being read.</p>
+        <p>AI crawlers are selective. They don't read your entire page. They extract the top layer — whatever is most accessible in your HTML structure. If your USP is buried, if your competitor's name appears more prominently in your own blog, if your product description isn't structured the way AI expects — the AI will pull that content, misrepresent you, and move on. You could be actively hurting your own visibility without knowing it.</p>
+    </section>
+
+    <section>
+        <h2>We find exactly where you're losing — and tell you exactly how to fix it.</h2>
+        <p>GodsEye audits your AI visibility, identifies the gaps, and gives you a specific plan your team can implement immediately.</p>
+
+        
+
+        <div class="process-grid">
+            <div class="step-card">
+                <div class="step-title">Step 1: AI Visibility Audit</div>
+                <p>We run hundreds of real-world queries across Google AI Mode, Perplexity, ChatGPT, and Gemini — the same queries your customers are typing. We extract every response, every citation, every source that AI chose over you.</p>
+                <ul>
+                    <li><strong>Visibility Score:</strong> How often your brand appears in AI-generated answers.</li>
+                    <li><strong>AI Presence Score:</strong> How often your website is actually selected as a source.</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title">Step 2: Deep Source Analysis</div>
+                <p>For every query where you're not appearing, we scrape and analyze the pages that ARE being cited. We reverse-engineer what the AI preferred — content structure, word count, HTML hierarchy, and product descriptions. Then we compare that directly against your site to show you the exact gap.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title">Step 3: Your Fix Plan</div>
+                <p>You get a ranked, specific action list detailing which HTML elements to restructure, which pages need content changes, which new blogs to write (and how to structure them), and which queries to target first. Nothing vague. Everything implementable.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title">Step 4: Execute in Workflow</div>
+                <p>GodsEye plugs directly into your team's workflow. It’s like giving your developer an AI co-pilot that knows your strategy, allowing your tech team to fix things instantly inside their coding environment.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title">Step 5: Re-Audit & Track Progress</div>
+                <p>Once changes go live, we re-run the audit for the same queries. You see movement in your visibility and presence scores over time. You know exactly what worked.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>If GodsEye were running your AEO — here's what would change.</h2>
+        <p>This is the part most tools skip. Not just "what we do" — but what it actually means for your company's growth.</p>
+
+        <ul>
+            <li><strong>If you're in EdTech:</strong> Parents are not clicking links — they are asking AI. If a parent asks "best coaching for JEE" and your brand doesn't appear, that is a lost admission. Multiply that by the thousands of times that query is asked daily.</li>
+            <li><strong>If you're in SaaS:</strong> Founders and growth teams use AI to shortlist tools before ever visiting a product page. If ChatGPT recommends your competitor, you never get a trial signup. You're invisible at the top of the funnel.</li>
+        </ul>
+
+        <h3>The Compounding Effect</h3>
+        <p>AI visibility builds over time, the same way SEO does. Companies that optimize now become the default recommendation across every AI platform. Those who wait will spend years trying to catch up.</p>
+
+        
+
+        <div class="stat-box">
+            Your SEO person currently optimizes for Google's algorithm. GodsEye adds a second layer — <strong>optimizing for AI algorithms</strong> — using the same content, website, and team. Time investment from your side: just <strong>1–2 hours per week</strong>.
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>This window is open. It won't be for long.</h2>
+        <p>AI search is not a future trend. It is the current behavior of your customers. Most AEO tools stop at giving you data. GodsEye goes deeper by giving you a prioritized action plan that plugs directly into your workflow.</p>
+
+        <hr style="background: #333; margin: 30px 0;">
+
+        <h3>Start the Pilot</h3>
+        <p>We are currently working with early clients on a <strong>free pilot basis</strong>. Full analysis, full access, full plan — in exchange for your feedback on the product.</p>
+
+        <div style="text-align: left; max-width: 500px; margin: 30px auto;">
+            <p><strong>Step 1:</strong> Share your website, key product pages, and customer queries.</p>
+            <p><strong>Step 2:</strong> We run the full AI visibility audit (48–72 hours) and return your ranked fix plan.</p>
+            <p><strong>Step 3:</strong> Implement fixes via GodsEye inside your workflow & see results.</p>
+        </div>
+
+        <p style="font-size: 1.2rem; margin-top: 40px;"><strong>The ask:</strong> One conversation. One audit. See the numbers for yourself.</p>
+        <p style="color: var(--accent-color); font-style: italic; margin-top: 20px;">GodsEye: Total visibility into the AI-driven internet.</p>
+    </section>
+
+</div>
+
+</body>
 </html>
